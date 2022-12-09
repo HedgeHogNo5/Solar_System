@@ -63,7 +63,7 @@ Data = [] #This is a list that I am going to save my bodies into
 time = 0 #Time at the start of the simulation
 D = 0 #This is a dump data Varible to help me to deep save my results so I can plot them
 for i in range (0, 672, 168): #This doesn't mean we are looking over x seconds, it means we are looking over x steps of time (see body.update(n)) where n is is the number in the brackets
-  t = 3600 #This is the time step, Delta T (in seconds), that will be fed into the paticle class' numerical method we are looking at and update the position and velocity using this time step
+  t = 100000 #This is the time step, Delta T (in seconds), that will be fed into the paticle class' numerical method we are looking at and update the position and velocity using this time step
   time +=t 
   for body in bodies:
      body.updateGravitationalAcceleration(bodies)

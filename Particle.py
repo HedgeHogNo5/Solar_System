@@ -2,6 +2,8 @@ import numpy as np
 
 
 
+
+
 class Particle:
     
     """In this script we are creating a single class precisely called Particle. T
@@ -92,3 +94,12 @@ class Particle:
         for body in bodies:
             momentum = np.linalg.norm(body.velocity) * body.mass
         return momentum
+   
+   
+   """This is defining the external angular momentum of each of the particles in the system. 
+   This is used to test whether angular momentum is conserved in the simulation"""
+    def Angular_Momentum (self.bodies):
+        Angualar_Momentum = 0
+        for body in bodies:
+            Angualar_Momentum =np.linanlg.norm(body.velocity) * np.linalg.norm(body.position)
+        return Angualar_Momentum
