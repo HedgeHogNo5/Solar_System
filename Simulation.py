@@ -71,17 +71,6 @@ for i in range (0, 672, 168): #This doesn't mean we are looking over x seconds, 
   print('x=', Earth.position, 'v=', Earth.velocity)
   print('y=', Venus.position, 'u=', Venus.velocity)
 
-
-
-
-
-
-
-
-
-
-
-
   if i == D:
     for body in bodies:
         Data.append([time, copy.deepcopy(body)]) #This is saving the list data 
